@@ -53,4 +53,9 @@ public class Payment {
         this.idReservation = idReservation;
     }
 
+    @Override
+    public String toString() {
+        return "\n{Id}: " + this.getId() + "\n{Price}: " + this.getPrice() + "\n{Status}: " + this.getPaymentStatus() + "\n{IdReservation}: " + this.getIdReservation().getId();
+    }
+
 }

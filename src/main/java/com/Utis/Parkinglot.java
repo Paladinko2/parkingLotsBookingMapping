@@ -53,4 +53,9 @@ public class Parkinglot {
         this.lotType = lotType;
     }
 
+    @Override
+    public String toString() {
+        return "\n{Id}: " + this.getId() + "\n{LotNumber}: " + this.getLotNumber() + "\n{LotStatus}: " + this.getLotStatus() + "\n{LotType}: " + this.getLotType();
+    }
+
 }

@@ -40,4 +40,9 @@ public class Driver {
         this.driverSurname = driverSurname;
     }
 
+    @Override
+    public String toString() {
+        return "\n{Id}: " + this.getId() + "\n{DriverName}: " + this.getDriverName() + "\n{DriverSurname}: " + this.getDriverSurname();
+    }
+
 }

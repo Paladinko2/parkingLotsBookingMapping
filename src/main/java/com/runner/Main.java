@@ -1,9 +1,6 @@
 package com.runner;
 
-import com.Utis.Auto;
-import com.Utis.Driver;
-import com.Utis.NewHibernateUtil;
-import com.Utis.Reservation;
+import com.Utis.*;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
@@ -21,6 +18,11 @@ public class Main {
 
         for (Reservation r : hibQuery) {
             System.out.println("Талон резервации парковочного места автомобилем синего цвета: " + r.toString());
+        }
+
+        List<Driver> l1 = s.createQuery("from Driver").list();
+        for (Driver a : l1) {
+            System.out.println("\nDriver: " + a.getId() + a);
         }
 
         s.flush();

@@ -63,4 +63,9 @@ public class Auto {
         this.idDriver = idDriver;
     }
 
+    @Override
+    public String toString() {
+        return "\n{Id}: " + this.getId() + "\n{Mark}: " + this.getMark() + "\n{PlaneNumber}: " + this.getPlateNumber() + "\n{IdDriver}: " + this.getIdDriver().getId() + "\n{Color}: " + this.getColor();
+    }
+
 }
